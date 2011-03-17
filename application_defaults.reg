@@ -1,0 +1,157 @@
+Windows Registry Editor Version 5.00
+
+; -------------------------------------------------------------------
+; cmd console settings
+[HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]
+"HistoryNoDup"=dword:00000001
+"QuickEdit"=dword:00000800
+"ScreenBufferSize"=dword:0bb80050
+"WindowSize"=dword:001e0050
+
+; -------------------------------------------------------------------
+; notepad
+[HKEY_CURRENT_USER\Software\Microsoft\Notepad]
+"fWrap"=dword:00000001
+"StatusBar"=dword:00000001
+"fSaveWindowPositions"=dword:00000000
+"lfFaceName"="Courier New"
+"szHeader"="&f"
+"szTrailer"="Page &p"
+
+; -------------------------------------------------------------------
+; internet explorer
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\International\Scripts\3]
+"IEPropFontName"="Arial"
+"IEFixedFontName"="Georgia"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Search Page"=""
+"ShowGoButton"="no"
+"Friendly http errors"="no"
+"Enable AutoImageResize"="no"
+"Window Title"="Microsoft Internet Explorer"
+"Search Bar"="http://www.google.ca"
+"Use Custom Search URL"=dword:00000001
+"StatusBarOther"=dword:00000001
+"Use Search Asst"="no"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar]
+"BigBitmap"=""              ; disable corporate branding
+"SmallBitmap"=""            ; disable corporate branding
+"BrandBitmap"=""            ; disable corporate branding
+"SmBrandBitmap"=""          ; disable corporate branding
+"Locked"=dword:00000000     ; unlock the toolbar
+"ShowDiscussionButton"="No" ; hide the discussion toolbar icon
+
+; change max simultaneous downloads to 10 (default was 2)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"MaxConnectionsPer1_0Server"=dword:0000000a
+"MaxConnectionsPerServer"=dword:0000000a
+
+; -------------------------------------------------------------------
+; ms office xp general prefs
+
+; disable office startup panes
+[HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Excel\Options]
+"StartupDialog"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\PowerPoint\Options]
+"StartupDialog"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Word\Options]
+"StartupDialog"=dword:00000000
+
+; disable clippy office assistant
+[HKEY_CURRENT_USER\Software\Microsoft\Office\Common\Assistant]
+"AsstState"=dword:00000026
+
+; -------------------------------------------------------------------
+; wordpad
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\IP]
+"Layout2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"LayoutAux2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"Wrap"=dword:00000002
+"BarState0"=dword:0000000f
+"BarState1"=dword:0000000f
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Options]
+"WordSel"=dword:00000001
+"Units"=dword:00000000
+"Maximized"=dword:00000001
+"FrameRect"=hex:42,00,00,00,42,00,00,00,42,03,00,00,dd,01,00,00
+"PageMargin"=hex:a0,05,00,00,a0,05,00,00,a0,05,00,00,a0,05,00,00
+"DefaultFormat"=dword:00000005
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\RTF]
+"Layout2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,08,00,00,e8,00,00,01,00,00,\
+  00,00,00,00,00,00,00,00,00,fe,ff,ff,ff,fe,ff,ff,ff,ff,7f,00,00,01,00,00,00,\
+  00,00,00,00,fe,ff,ff,ff,fe,ff,ff,ff,2b,01,00,00,1e,00,00,00,04,20,00,00,00,\
+  00,00,80,00,00,00,00,00,00,04,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,\
+  2f,01,00,00,fe,ff,ff,ff,ff,7f,00,00,01,00,00,00,1b,e8,00,00,2f,01,00,00,fe,\
+  ff,ff,ff,69,03,00,00,1e,00,00,00,04,20,00,00,00,00,00,80,00,00,00,00,00,00,\
+  01,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,\
+  7f,00,00,00,00,00,00,00,00,1b,e8,00,00,01,00,00,00,00,00,00,00,01,00,00,00,\
+  ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,04,00,00,00,00,00,00,e8,00,\
+  00,04,e8,00,00,00,00,00,00,1e,e8,00,00,01,00,00,00,00,00,00,00,01,00,00,00,\
+  ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,01,00,00,00,00,00,1c,e8,00,\
+  00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,\
+  00,00,00,00,01,00,00,00,00,00,1d,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,\
+  00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,01,00,00,00,00,00,05,e8,\
+  00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,\
+  00,00,00,00,00,00,00
+"LayoutAux2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"Wrap"=dword:00000002
+"BarState0"=dword:0000000f
+"BarState1"=dword:0000000f
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Settings]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Text]
+"Layout2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,08,00,00,e8,00,00,01,00,00,\
+  00,00,00,00,00,00,00,00,00,fe,ff,ff,ff,fe,ff,ff,ff,ff,7f,00,00,01,00,00,00,\
+  00,00,00,00,fe,ff,ff,ff,fe,ff,ff,ff,2b,01,00,00,1e,00,00,00,04,20,00,00,00,\
+  00,00,80,00,00,00,00,00,00,04,e8,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  fe,ff,ff,ff,fe,ff,ff,ff,ff,7f,00,00,01,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,04,20,00,00,00,00,00,80,00,00,00,00,00,00,\
+  01,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,\
+  7f,00,00,00,00,00,00,00,00,1b,e8,00,00,01,00,00,00,00,00,00,00,01,00,00,00,\
+  ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,05,00,00,00,00,00,00,e8,00,\
+  00,00,00,00,00,04,e8,00,00,00,00,00,00,1e,e8,00,00,01,00,00,00,00,00,00,00,\
+  01,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,01,00,00,00,00,\
+  00,1c,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,\
+  ff,7f,00,00,00,00,00,00,01,00,00,00,00,00,1d,e8,00,00,01,00,00,00,00,00,00,\
+  00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,01,00,00,00,\
+  00,00,05,e8,00,00,00,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,\
+  ff,ff,7f,00,00,00,00,00,00,00,00
+"LayoutAux2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"Wrap"=dword:00000001
+"BarState0"=dword:00000006
+"BarState1"=dword:00000006
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Word6]
+"Layout2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,08,00,00,e8,00,00,01,00,00,\
+  00,00,00,00,00,00,00,00,00,fe,ff,ff,ff,fe,ff,ff,ff,ff,7f,00,00,01,00,00,00,\
+  00,00,00,00,fe,ff,ff,ff,fe,ff,ff,ff,2b,01,00,00,1e,00,00,00,04,20,00,00,00,\
+  00,00,80,00,00,00,00,00,00,04,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,\
+  fe,ff,ff,ff,1c,00,00,00,ff,7f,00,00,01,00,00,00,00,00,00,00,fe,ff,ff,ff,1c,\
+  00,00,00,38,02,00,00,3c,00,00,00,04,20,00,00,00,00,00,80,00,00,00,00,00,00,\
+  01,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,\
+  7f,00,00,00,00,00,00,00,00,1b,e8,00,00,01,00,00,00,00,00,00,00,01,00,00,00,\
+  ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,05,00,00,00,00,00,00,e8,00,\
+  00,00,00,00,00,04,e8,00,00,00,00,00,00,1e,e8,00,00,01,00,00,00,00,00,00,00,\
+  01,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,01,00,00,00,00,\
+  00,1c,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,\
+  ff,7f,00,00,00,00,00,00,01,00,00,00,00,00,1d,e8,00,00,01,00,00,00,00,00,00,\
+  00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,ff,ff,7f,00,00,00,00,00,00,01,00,00,00,\
+  00,00,05,e8,00,00,01,00,00,00,00,00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,ff,\
+  ff,ff,7f,00,00,00,00,00,00,00,00
+"LayoutAux2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"Wrap"=dword:00000002
+"BarState0"=dword:0000000f
+"BarState1"=dword:0000000f
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Write]
+"Layout2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"LayoutAux2"=hex:02,00,00,00,00,04,00,00,58,02,00,00,00,00
+"Wrap"=dword:00000002
+"BarState0"=dword:0000000f
+"BarState1"=dword:0000000f

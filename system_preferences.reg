@@ -1,0 +1,59 @@
+Windows Registry Editor Version 5.00
+
+; Sets various Windows XP preferences that require
+; administrative access to the system
+
+;disable windows tour
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Applets\Tour]
+"RunCount"=dword:00000000
+
+; disable default sound schemes
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes]
+"Default"=".NONE"
+
+;disable autorun
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+;disable error reporting
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PCHealth\ErrorReporting]
+"DoReport"=dword:00000000
+
+;prefetch settings (load-time enhancer) 
+;default value is 3 (prefetch boot and app files)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+;"EnablePrefetcher"=dword:00000000
+
+;disable system restore
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore]
+"DisableSR"=dword:00000001
+
+;Disable Remote Registry Service Now registry can be modified only by users on your computer)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry]
+"Start"=dword:00000004
+
+;Disabling the File Association Web Service
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]
+"NoInternetOpenWith"=dword:00000001
+
+;Disable Shutdown Event Tracker (Shutdown Speedup)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Reliability]
+"ShutdownReasonOn"=dword:00000000
+"ShutdownReasonUI"=dword:00000000
+
+;Disable the NTFS Last Access Time Stamp update
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:00000001
+
+;Disable Recent Documents History
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+
+;Show Detailed Information in Device Manager (can display old/removed hardware drivers)
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+;"DEVMGR_SHOW_DETAILS"=dword:00000001
+;"DEVMGR_SHOW_NONPRESENT_DEVICES"="1"
+
+;Remove More Themes Online... from Themes Dropdown Box
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\DownloadSites]
+

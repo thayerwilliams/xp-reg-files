@@ -1,0 +1,113 @@
+Windows Registry Editor Version 5.00
+
+; Sets various Windows XP preferences that are
+; accessible to limited user accounts
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShellState"=hex:24,00,00,00,73,bc,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  01,00,00,00,0d,00,00,00,00,00,00,00,02,00,00,00  ; enable xp-style start menu
+"link"=hex:00,00,00,00                 ; remove 'Shortcut To ...' prefix
+"EnableAutoTray"=dword:00000001        ; hide inactive systray icons
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001                ; show hidden files
+"HideFileExt"=dword:00000000           ; don't hide known file extensions
+"HideIcons"=dword:00000001             ; hide desktop icons
+"WebView"=dword:00000001               ; use common tasks in folders
+"SuperHidden"=dword:00000000
+"ShowSuperHidden"=dword:00000000       ; show operating system files
+"ListviewShadow"=dword:00000000        ; shadows for desktop icons
+"ListviewWatermark"=dword:00000000     ; use background image in folders
+"ListviewAlphaSelect"=dword:00000001   ; show translucent selection rectangle
+"TaskbarAnimations"=dword:00000000     ; slide taskbar buttons
+"FriendlyTree"=dword:00000000          ; display simple folder view
+"WebViewBarricade"=dword:00000001      ; disable 'these files are hidden' warning
+"DisableThumbnailCache"=dword:00000001 ; disable thumbnail caching
+"TaskbarGlomming"=dword:00000000       ; disable taskbar grouping of windows
+;"EnableBalloonTips"=dword:00000000     ; disable balloon tips (2=on/0=off)
+;"ShowInfoTip"=dword:00000000           ; disable tooltips
+"StartMenuFavorites"=dword:00000000
+"Start_ShowNetPlaces"=dword:00000001
+"Start_ShowNetConn"=dword:00000001
+"Start_LargeMFUIcons"=dword:00000000   ; show small icons
+"Start_MinMFU"=dword:0000000a          ; show n (hex) most freq used apps on start menu
+"Start_ShowControlPanel"=dword:00000001
+"Start_EnableDragDrop"=dword:00000001
+"Start_ShowHelp"=dword:00000000
+"Start_ShowMyComputer"=dword:00000001
+"Start_ShowMyDocs"=dword:00000001
+"Start_ShowMyMusic"=dword:00000000
+"Start_ShowMyPics"=dword:00000000
+"Start_ShowPrinters"=dword:00000001
+"Start_ShowRun"=dword:00000001
+"Start_ScrollPrograms"=dword:00000000
+"Start_ShowSearch"=dword:00000000
+"Start_ShowSetProgramAccessAndDefaults"=dword:00000000
+"Start_ShowRecentDocs"=dword:00000000
+"Start_AutoCascade"=dword:00000001     ; open submenus when hovered over
+"Start_NotifyNewApps"=dword:00000000   ; don't highlight new applications
+"Start_AdminToolsRoot"=dword:00000002
+"StartMenuAdminTools"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState]
+"FullPath"=dword:00000001              ; display full path in titlebar
+"FullPathAddress"=dword:00000001       ; display full path in address bar
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\SmallIcons]
+"SmallIcons"="yes"                     ; show small icons in explorer toolbar
+
+; detailed view in explorer
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams]
+"Settings"=hex:08,00,00,00,04,00,00,00,01,00,00,00,00,77,7e,13,73,35,cf,11,ae,\
+  69,08,00,2b,2e,12,62,04,00,00,00,01,00,00,00,43,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\TrayNotify]
+"BalloonTip"=dword:00000007            ; balloon tip timeout in secs
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\SysTray]
+"Services"=dword:0000001e              ; show volume control in system tray
+
+; disable the language bar
+[HKEY_CURRENT_USER\Software\Microsoft\CTF\LangBar]
+"ExtraIconsOnMinimized"=dword:00000000
+"ShowStatus"=dword:00000003
+[HKEY_CURRENT_USER\Software\Microsoft\CTF\MSUTB]
+"ShowDeskBand"=dword:00000000
+
+; computer/internet search prefs
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"IncludeSubFolders"=dword:00000001     ; search hidden files/folders
+"SearchSystemDirs"=dword:00000001      ; search system folders
+"SearchHidden"=dword:00000000          ; search hidden files/dirs
+[HKEY_CURRENT_USER\Software\Microsoft\Search Assistant]
+"UsageCount"=dword:00000003
+"UseAdvancedSearchAlways"=dword:00000001
+"SocialUI"=dword:00000000
+"DefaultSearchURL"="http://www.google.com/search?q="
+"AutoComplete"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState]
+"Use Search Asst"="no"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Tour]
+"RunCount"=dword:00000000              ; disable windows tour prompt
+
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardDelay"="0"                    ; kb delay rate
+"KeyboardSpeed"="31"                   ; kb repeat rate
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"DragFullWindows"="1"                  ; show window contents while dragging
+"FontSmoothing"="2"                    ; smooth edges of screen fonts (0=off 2=on)
+"FontSmoothingType"=dword:00000002     ; standard=1, cleartype=2
+"MenuShowDelay"="50"                   ; start menu mouseover delay (default 400)
+"UserPreferencesMask"=hex:B0,12,01,80  ; enable underlined letters for easy keyboard navigation
+"SCRNSAVE.EXE"="C:\\WINDOWS\\system32\\scrnsave.scr"    ; set screensaver
+;"SCRNSAVE.EXE"="C:\\WINDOWS\\System32\\ssbezier.scr"    ; set screensaver
+"ScreenSaveTimeOut"="300"              ; 5 min timeout
+"ScreenSaverIsSecure"="1"              ; prompt for password
+"ScreenSaveActive"="1"
+
+[HKEY_CURRENT_USER\Control Panel\Screen Saver.Bezier]
+"Width"="30"
+"Length"="4"
+"LineSpeed"="2"
